@@ -11,14 +11,14 @@
 WHERE (COMM IS NULL OR COMM = 0)
 AND SAL > 1100 AND SAL < 5000
 AND SAL != 1500; (or use <>)` 
--- In SQL, group all ands together or use parentheses
+- In SQL, group all ands together or use parentheses
 
--- Return those employees that are salesmen and that make either 300 dollars in commission or greater than 1000 dollars in commission
+- Return those employees that are salesmen and that make either 300 dollars in commission or greater than 1000 dollars in commission
 `SELECT * FROM EMP
 WHERE JOB = 'SALESMAN
 AND (COMM = 300 OR COMM > 1000);`
 
--- LIKE Operator
+- LIKE Operator
 `SELECT * FROM EMP
 WHERE JOB LIKE 'S%';`
 
