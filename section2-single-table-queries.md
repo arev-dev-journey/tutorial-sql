@@ -1,10 +1,25 @@
 # Section 2: Single Table Queries
 ---
 ## Lesson #4: Retrieving Data From A Table (SELECT Clause)
+---
+`SELECT * FROM EMP;`
+`SELECT <column1, col2, ...>
+FROM <table>`
+`SELECT DISTINCT JOB FROM EMP;`
+
 ## Lesson #5: Using the WHERE Clause In a SQL Query
+---
+`SELECT * FROM EMP;`
+`SELECT ENAME 
+FROM EMP
+WHERE JOB = 'MANAGER'
+AND SAL = 1600;`
 ## Lesson #6: Using Operators in the WHERE Clause
+---
 ## Lesson #7: Combining WHERE, AND, & OR with Operators
+---
 ## Lesson #8: Query Filtering Continued BETWEEN, IN and NULL
+---
 ## Lesson #9: Query Filtering Conditions & Operator Precendence
 ---
 `SELECT * FROM EMP
@@ -22,7 +37,7 @@ AND (COMM = 300 OR COMM > 1000);`
 `SELECT * FROM EMP
 WHERE JOB LIKE 'S%';`
 
-# Lesson 10: Ordering, Concatenating, and Aliasing Query Results
+## Lesson 10: Ordering, Concatenating, and Aliasing Query Results
 ---
 `SELECT * FROM EMP;`
 `SELECT ENMAE, SAL, COMM FROM EMP;`
