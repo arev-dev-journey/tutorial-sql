@@ -16,10 +16,45 @@ WHERE JOB = 'MANAGER'
 AND SAL = 1600;`
 ## Lesson #6: Using Operators in the WHERE Clause
 ---
+`SELECT * FROM EMP
+WHERE JOB != 'SALESMAN'
+AND SAL <= 3000;`
+
+`SELECT * FROM EMP
+WHERE SAL < COMM;`
+
+`SELECT * FROM EMP
+WHERE JOB != 'MANAGER'
+AND SAL > 2500 AND DEPTNO = 20;`
 ## Lesson #7: Combining WHERE, AND, & OR with Operators
 ---
+`SELECT * 
+FROM EMP 
+WHERE JOB = 'SALESMAN' 
+OR JOB = 'CLERK';`
+
+`SELECT ENAME 
+FROM EMP
+WHERE JOB != 'SALESMAN' AND JOB != 'MANAGERS'
+AND SAL >= 2000;`
 ## Lesson #8: Query Filtering Continued BETWEEN, IN and NULL
 ---
+`SELECT ENAME, HIREDATE
+FROM EMP
+WHERE DEPTNO IN (20,30);`
+- IN is better to use where needing to use multiple OR clause
+- NOT IN can be used to filter out values not needed
+- BETWEEN operator filters based on a range of data
+`SELECT * FROM EMP
+WHERE HIREDATE BETWEEN '05/01/1981' AND '12/09/1982';`
+
+`SELECT * FROM EMP
+WHERE SAL BETWEEN 1000 AND 2000;`
+- BETWEEN is inclusive
+- NOT BETWEEN will not include the values used
+
+`SELECT * FROM EMP WHERE COMM IS NULL;`
+`SELECT * FROM EMP WHERE COMM IS NOT NULL;`
 ## Lesson #9: Query Filtering Conditions & Operator Precendence
 ---
 `SELECT * FROM EMP
