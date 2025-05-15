@@ -1,9 +1,11 @@
-# Lesson #4: Retrieving Data From A Table (SELECT Clause)
-# Lesson #5: Using the WHERE Clause In a SQL Query
-# Lesson #6: Using Operators in the WHERE Clause
-# Lesson #7: Combining WHERE, AND, & OR with Operators
-# Lesson #8: Query Filtering Continued BETWEEN, IN and NULL
-# Lesson #9: Query Filtering Conditions & Operator Precendence
+# Section 2: Single Table Queries
+---
+## Lesson #4: Retrieving Data From A Table (SELECT Clause)
+## Lesson #5: Using the WHERE Clause In a SQL Query
+## Lesson #6: Using Operators in the WHERE Clause
+## Lesson #7: Combining WHERE, AND, & OR with Operators
+## Lesson #8: Query Filtering Continued BETWEEN, IN and NULL
+## Lesson #9: Query Filtering Conditions & Operator Precendence
 ---
 `SELECT * FROM EMP
 WHERE (COMM IS NULL OR COMM = 0)
