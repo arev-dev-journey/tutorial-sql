@@ -1,6 +1,4 @@
 # Lesson #4: Retrieving Data From A Table (SELECT Clause)
----
-
 # Lesson #5: Using the WHERE Clause In a SQL Query
 # Lesson #6: Using Operators in the WHERE Clause
 # Lesson #7: Combining WHERE, AND, & OR with Operators
