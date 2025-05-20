@@ -29,8 +29,7 @@ WHERE deptno = 20;`
 
 ## Lesson #12: Using Functions in WHERE And Character-Based SRFs
 ---
-`SELECT lower(ename) FROM emp;`
-`SELECT * FROM emp WHERE job = upper('manager');`
+`SELECT lower(ename) FROM emp;` `SELECT * FROM emp WHERE job = upper('manager');`
 
 `SELECT initcap('Hello, my name is Alex') AS sentence
 FROM dual;`
@@ -59,4 +58,15 @@ FROM dual;`
 
 ## Lesson #13: Numeric and Date Data type SRFs
 ---
+`SELECT round(107.89342) FROM dual;`
+`SELECT round(107.2123, 2) FROM dual;`
+`SELECT trunc(107.99999) FROM dual; // Output: 107`
+`SELECT trunc(107.99999,2) FROM dual;   // Output: 107.99`
 
+`SELECT systimestamp FROM dual;`
+`SELECT add_months('11/17/2012',8) FROM dual;`
+`SELECT months_between('01/01/2021', '01/01/2022') FROM dual;`
+`SELECT trunc(systimestamp) FROM dual`;
+-- Can take month or year as a second argument
+## Lesson #14: Conversion SRFs and Date Formatting
+---
